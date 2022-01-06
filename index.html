@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="宮崎優子のポートフォリオです">
+        <title>Yuko Miyazaki / Portfolio</title>
+
+        <!-- フォント読み込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/ym_portfolio.js"></script>
+    </head>
+    
+    <body>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#works">works</a></li>
+                <li><a href="#profile">profile</a></li>
+                <li><a href="#skills">skills</a></li>
+            </ul>
+        </nav>
+
+        <div id="loading">
+            <div class="init">
+                <h1 class="my">
+                    <span class="y">Y</span>
+                    <span class="m">M</span>
+                </h1>
+                <p class="load_border"> </p>
+            </div>
+        </div>
+
+        <div id="works">
+            <div id="works_title" class="header_title">
+                <h1 class="my">
+                    <span class="y">Y</span>
+                    <span class="m">M</span>
+                    <span class="title_name">works</span>
+                </h1>
+                <hr width="90%">
+            </div>
+            <div class="inner_wrapper">
+                
+                <ul id="filter_btns">
+                    <li data-filter=".all" class="filter_btn" onclick="filterring(this)"><a>All</a></li>
+                    <li data-filter=".media_art" class="filter_btn"><a>Media art</a></li>
+                    <li data-filter=".web" class="filter_btn"><a>Web</a></li>
+                    <li data-filter=".product" class="filter_btn"><a>Product</a></li>
+                    <li data-filter=".video" class="filter_btn"><a>Video</a></li>
+                    <li data-filter=".prototype" class="filter_btn"><a>Prototype</a></li>
+                    <li data-filter=".other" class="filter_btn"><a>Others</a></li>
+                </ul>
+                
+                
+                <ul id="contents_list">
+                    <li class="container video">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/adventure/SRGB5811-min.JPG">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">Adventure</p>
+                                        <p class="year">2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container video">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/hachiouji_cm/01.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">ちょっと遠くへ行きたくなる八王子</p>
+                                        <p class="year">2018</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container product media_art">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/madoromi/01.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">まどろみの温度</p>
+                                        <p class="year">2019</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container web">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/gengo/favicon.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">言語邂逅</p>
+                                        <p class="year">2019</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container video">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/syoujo_mv/1.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">少女の空想庭園</p>
+                                        <p class="year">2019</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container video">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/starUp/1.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">Start Up</p>
+                                        <p class="year">2019</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container video">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/medium/01.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">MEDIUM</p>
+                                        <p class="year">2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container media_art">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/relation_lines/02.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">Relation-Lines</p>
+                                        <p class="year">2021</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container others">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/others/yahho2.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">Typography</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="container others">
+                        <a href="">
+                            <div class="image_container">
+                                <img src="image/others/babu_top.jpg">
+                                <div class="mask">
+                                    <div class="caption">
+                                        <p class="title">Book</p>
+                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div id="profile">
+            <div id="profile_title" class="header_title">
+                <h1 class="my">
+                    <span class="y">Y</span>
+                    <span class="m">M</span>
+                    <span class="title_name">profile</span>
+                </h1>
+                <hr width="80%">
+            </div>
+            <div class="inner_wrapper">
+                <div id="about_me">
+                    <h2>宮崎優子<span class="eng_name">MIYAZAKI YUKO</span></h2>
+                    <div class="about_me">
+                        <div class="my_image">
+                            <img src="image/profile/myImage2.jpg" width="406px">
+                        </div>
+                        <div class="about_text">
+                            <h3>About Me </h3>
+                            音楽と漫画と犬とアイドルが好き。何より学ぶことが好き。<br>
+                            「幸せでいること」を目標に生きている。<br>
+                            <br>
+                            大学ではデザインについて広く学び、特にテクノロジーを使って人々の体験を作るインタラクティブデザインに興味を持つ。<br>
+                            「ことば」「無意識」「信仰」など人々の中にある共通認識であり「目に見えないもの」を形に表すような作品を制作している。<br>
+                            <br>
+                            また、大学で5年間、聴覚障がい学生の授業支援ボランティア(有償)を続けている。
+                            ダイバーシティの考え方に触れ、様々な境遇の人が、皆同じように尊重される世の中を目指し、そのために自分は何をするべきなのかを考える。
+                        </div>
+                    </div>
+                </div>
+                <div id="biography">
+                    <h3>Biography</h3>
+                    <div id="bio_text">
+                        <div>
+                            <p><span class="bio_year">1998年</span>神奈川県鎌倉市に生まれる</p>
+                        </div>
+                        <div>
+                            <span class="bio_year">2017年</span>首都大学東京(現：東京都立大学)<br>
+                            <span class="bio_year"></span>システムデザイン学部インダストリアルアートコース入学
+                        </div>
+                        <div>
+                            <span class="bio_year">2021年</span>東京都立大学大学院システムデザイン研究科インダストリアルアート学域前期博士課程入学<br>
+                            <span class="bio_year"></span>インタフェースデザインスタジオ所属
+                        </div>  
+                    </div>
+                </div>
+                <div id="sns_contact">
+                    <h3>SNS</h3>
+                    <div class="sns_s">
+                        <div class="twitter">
+                            <a href="https://twitter.com/tcifog">Twitter</a>
+                        </div>
+                        <div class="note">
+                            <a href="https://note.com/yuko_3">note</a>
+                        </div>
+                        <div class="contact">
+                            <a href="">contact</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="skills">
+            <div class="header_title">
+                <h1 class="my">
+                    <span class="y">Y</span>
+                    <span class="m">M</span>
+                </h1>
+                <hr width="80%">
+            </div>
+            <div class="inner_wrapper">
+                <div id="skill_range">
+                    <ul class="skill_list">
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Adobe Illustrator</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar ai"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Adobe AfterEffects</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar ae"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Adobe Premiere</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar pr"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>openFrameworks</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar of"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Unity</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar unity"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar css"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>P5.js</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar p5"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="skill_list">
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Adobe Lightroom</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar lr"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Adobe Photoshop</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar ps"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>Cinema4d</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar cinema"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>TouchDesigner</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar td"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar html"></div>
+                            </div>
+                        </li>
+                        <li class="skill_item">
+                            <div class="skill_icon">
+                                <img src="image/skills/ai.png" alt="イラレのアイコン">
+                                <p>javascript</p>
+                            </div>
+                            <div class="skill_detail">
+                                <ul class="border">
+                                    <li class="left"></li>
+                                    <li class="right"></li>
+                                </ul>
+                                <div class="skill_bar js"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
