@@ -12,6 +12,8 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     margin: 5vh  auto 40vh;
 }
 
+/* loading animation */
+
 #loading {
     width: 100%;
     height: 100%;
@@ -26,18 +28,51 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 .init {
     margin-top: 45vh;
     text-align: center;
-    animation: upside 1s ease forwards;
-    animation-delay: 2.5s;
+    font-size: 1.2rem;
 }
 
-@keyframes upside {
+.beta {
+    animation: fadeout 1s ease forwards;
+    animation-delay: 2s;
+}
+@keyframes fadeout {
     0% {
-        transform: translateY(0);
+        opacity: 1;
     }
     100% {
-        transform: translateY(-40vh);
+        opacity: 0;
     }
 }
+
+.loading_y {
+    position: relative;
+    left: 0;
+    animation: slide_y 1s ease forwards;
+    animation-delay: 3s;
+}
+@keyframes slide_y {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 10vw;
+    }
+}
+.loading_m {
+    position: relative;
+    left: 0;
+    animation: slide_m 1s ease forwards;
+    animation-delay: 3s;
+}
+@keyframes slide_m {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 3vw;
+    }
+}
+
 .load_border:before {
     content: '';
     position: absolute;
@@ -60,6 +95,8 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     visibility: hidden;
 }
 
+/* header_title animation */
+
 .my span {
     position: relative;
     vertical-align: top;
@@ -68,6 +105,14 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     overflow-y: hidden;
     font-family: 'Josefin Slab', serif;
 }
+
+.y{
+    left: 4vw;
+}
+.m {
+    left: 4vw;
+}
+
 .y.animation_start {
     animation: change_positionY 2s ease forwards;
     animation-delay: 0.2s;
@@ -76,12 +121,12 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 @keyframes change_positionY {
     0%{
         top: 0;
-        left: 0;
+        left: 4vw;
         opacity: 1;
     }
     20%{
         top: -7vh;
-        left: 0;
+        left: 4vw;
         opacity: 0;
     }
     70%{
@@ -102,7 +147,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 @keyframes change_positionX {
     0%{
-        left: 0;
+        left: 4vw;
     }
     70%{
         left: -40vw;
@@ -120,7 +165,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 .title_name.animation_start {
     animation: titleUp 1s ease forwards;
-    /* animation-delay: 2.5s; */
+    animation-delay: 2.5s;
 }
 @keyframes titleUp {
     0% {
@@ -298,6 +343,7 @@ h3 {
 
 .year {
     font-weight: 300;
+    font-size: 0.8rem;
 }
 
 
