@@ -461,24 +461,24 @@ h3 {
     width: 3vw;
 }
 
-.skill_detail {
+.skill_bar_range {
     flex: 3;
     height: 6vw;
     position: relative;
 }
 
-.skill_detail .border {
+.skill_bar_range .border {
     height: 6vw;
     display: flex;
     
 }
-.skill_detail .border .right {
+.skill_bar_range .border .right {
     flex: 1;
     border-right: 2px solid #3c3c3c;
     border-style: dotted;
 }
 
-.skill_detail .border .left {
+.skill_bar_range .border .left {
     flex: 1;
     border-left: 2px solid #3c3c3c;
     border-right: 2px solid #3c3c3c;
@@ -532,4 +532,7 @@ h3 {
 }
 .js {
     width: 80%;
+}
+.fifma {
+    width: 50%;
 }

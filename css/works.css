@@ -1,0 +1,118 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans JP', sans-serif;
+    list-style: none;
+}
+
+/* top */
+#top img {
+    width: 100%;
+}
+
+#title, #caption {
+    text-align: center;
+}
+#title h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+#title p {
+    font-size: 2rem;
+    color: #626262;
+}
+#caption {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 3vw auto;
+}
+
+/* inner wrapper */
+.inner_wrapper{
+    font-weight: 300;
+    width: 60%;
+    margin: 10vw auto;
+}
+.image2 img {
+    width: 100%;
+}
+
+/* explanation */
+#explanation {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+#theme {
+    height: 144px;
+    flex: 5;
+    text-align: center;
+}
+#theme div {
+    margin-top: 5vh;
+}
+#theme span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#exp_detail {
+    flex: 4;
+    padding-left: 5vw;
+    border-left: #626262 2px solid;
+    font-weight: 400;
+}
+#exp_detail div{
+    margin-top: 2vh;
+}
+.midashi {
+    display: inline-block;
+    width: 100px;
+    color: #4e4e4e;
+    font-weight: 300;
+}
+
+/* Concept */
+.content {
+    margin: 7vw auto;
+}
+.en_title {
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #bdbdbd;
+}
+.ja_title {
+    margin-left: 2vw;
+}
+.main_text {
+    margin: 3vw auto;
+    text-align: center;
+}
+.schedule_text {
+    padding: 0 10vw;
+}
+.schedule_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 2vh auto;
+}
+.month {
+    flex: 3;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.what_did {
+    flex: 2;
+    border-left: #626262 1px solid;
+    text-align: left;
+    padding-left: 5vw;
+}
