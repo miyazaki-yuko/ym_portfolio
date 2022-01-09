@@ -91,10 +91,20 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     margin-left: 2vw;
 }
 .main_text {
-    margin: 3vw auto;
-    text-align: center;
+    margin: 5vw auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: 400; */
+    font-size: 1.1rem;
+    line-height: 210%;
+}
+.under {
+    background: linear-gradient(transparent 60%, yellow 60%);
 }
 .schedule_text {
+    text-align: center;
     padding: 0 10vw;
 }
 .schedule_item {

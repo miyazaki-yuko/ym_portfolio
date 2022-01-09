@@ -367,8 +367,12 @@ h3 {
 .about_text{
     flex: 4;
     /* font-size: 0.9rem; */
+    line-height: 1.3rem;
     font-weight: 300;
     margin-left: 2vw;
+}
+.under {
+    background: linear-gradient(transparent 65%, #FFF7AA 65%);
 }
 
 .my_image img{
