@@ -103,9 +103,13 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 .under {
     background: linear-gradient(transparent 60%, yellow 60%);
 }
+.bold {
+    font-weight: 500;
+}
 .schedule_text {
     text-align: center;
     padding: 0 10vw;
+    margin: 5vw auto;
 }
 .schedule_item {
     display: flex;
@@ -114,6 +118,11 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     align-items: center;
     max-width: 100%;
     margin: 2vh auto;
+}
+.miro {
+    text-align: right;
+    /* font-weight: 400; */
+    margin-top: 10vh;
 }
 .month {
     flex: 3;
@@ -125,4 +134,31 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     border-left: #626262 1px solid;
     text-align: left;
     padding-left: 5vw;
+}
+
+/* research */ 
+#research_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container {
+    margin: 2vh 2vh;
+    width: 40%;
+    /* flex: 1; */
+}
+.image_container {
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #626262;
+}
+.image_container img {
+    /* width: 60%;
+    object-fit: cover; */
+    max-width: 100%;
 }
