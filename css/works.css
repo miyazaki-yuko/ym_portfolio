@@ -162,3 +162,20 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     object-fit: cover; */
     max-width: 100%;
 }
+
+/* slide show */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
