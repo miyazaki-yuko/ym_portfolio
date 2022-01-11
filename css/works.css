@@ -38,8 +38,18 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     width: 60%;
     margin: 10vw auto;
 }
-.image2 img {
+.image2 {
+    position: relative;
+    padding-bottom: 56.26%;
+    height: 0;
+    overflow: hidden;
+}
+.image2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
 /* explanation */
@@ -164,8 +174,11 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 /* slide show */
+/* .responsible_text {
+    margin: 5vw auto;
+}
 .swiper {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 .swiper-slide {
@@ -178,4 +191,40 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.swiper-slide p {
+    color: #626262;
+    font-weight: 400;
+    margin: 2vh;
+}
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+    background: #42AAC7;
+    opacity: 1;
+} */
+
+#resp_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.resp_container {
+    margin: 3vh auto;
+}
+.resp_image_container {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 100%;
+}
+.resp_image_container img {
+    width: 100%;
+    max-width: 100%;
 }
