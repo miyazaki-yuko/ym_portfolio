@@ -6,6 +6,42 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     scroll-behavior: smooth;
     font-family: 'Noto Sans JP', sans-serif;
     list-style: none;
+    text-decoration: none;
+}
+
+/* back to top btn */
+#back_to_top {
+    position: fixed;
+    left: 2vw;
+    bottom: 3vh;
+}
+#back_to_top a{
+    color: #3c3c3c;
+}
+#back_to_top a:hover {
+    color: #aeaeae;
+}
+.arrow {
+    position: relative;
+    padding-left: 1.6vw;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.arrow::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-color: #3c3c3c;
+    border-bottom: solid 2px;
+    border-left: solid 2px;
+    transform: rotate(45deg);
+    top: 30%;
+    left: 12px;
+    margin-top: 2px;
+}
+.arrow:hover {
+    border-color: #aeaeae;
 }
 
 /* top */
@@ -38,13 +74,16 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     width: 60%;
     margin: 10vw auto;
 }
-.image2 {
+.image2 img {
+    width: 100%;
+}
+.movie {
     position: relative;
     padding-bottom: 56.26%;
     height: 0;
     overflow: hidden;
 }
-.image2 iframe {
+.movie iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +115,8 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     flex: 4;
     padding-left: 5vw;
     border-left: #626262 2px solid;
-    font-weight: 400;
+    color: black;
+    /* font-weight: 400; */
 }
 #exp_detail div{
     margin-top: 2vh;
@@ -84,7 +124,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 .midashi {
     display: inline-block;
     width: 100px;
-    color: #4e4e4e;
+    color: #5e5e5e;
     font-weight: 300;
 }
 
@@ -109,6 +149,10 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     /* font-weight: 400; */
     font-size: 1.1rem;
     line-height: 210%;
+}
+.text_wrapper {
+    width: 65%;
+    overflow-wrap: break-word;
 }
 .under {
     background: linear-gradient(transparent 60%, yellow 60%);
