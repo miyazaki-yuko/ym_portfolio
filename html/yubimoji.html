@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="yubimoji page">
+    <title>Yuko Miyazaki / Yubimoji</title>
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/works.css">
+</head>
+
+<body>
+    <div id="back_to_top">
+        <a href="../index.html">
+            <div class="arrow">Top</div>
+        </a>
+    </div>
+    <div id="top">
+        <img src="../image/yubimoji/yubimoji.jpg" alt="東京都立大学学部卒業制作作品">
+    </div>
+    <div id="title">
+        <h1>指文字学習支援ゲーム（仮）</h1>
+        <p class="year">2021</p>
+    </div>
+    <div id="caption">
+        東京都立大学大学院　修士研究
+    </div>
+    <div class="inner_wrapper">
+
+        <!-- <div class="image2">
+            <img src="../image/yubimoji/yubimoji2.jpg" alt="開発中の画面">
+        </div> -->
+        <div id="explanation">
+            <div id="theme">
+                <div>
+                    <p>テーマ</p>
+                    <span>指文字学習支援のためのゲーム制作</span>
+                </div>
+            </div>
+            <div id="exp_detail">
+                <div>
+                    <span class="midashi">制作期間</span>2021/04-
+                </div>
+                <div>
+                    <span class="midashi">制作体制</span>個人制作
+                </div>
+                <div>
+                    <span class="midashi">使用ツール</span>p5.js<br>
+                    <span class="midashi"></span>ml5.js<br>
+                </div>
+            </div>
+        </div>
+        <div id="purpose" class="content">
+            <div class="each_title">
+                <span class="en_title">Purpose</span>
+                <span class="ja_title">- 目的 -</span>
+            </div>
+            <div class="concept_text main_text text_wrapper">
+                <p>
+                    指文字の練習を遊びながらできるWebタイピングゲームを制作する。
+                </p>
+            </div>
+        </div>
+        <div id="background" class="content">
+            <div class="each_title">
+                <span class="en_title">Background</span>
+                <span class="ja_title">- 背景 -</span>
+            </div>
+            <div class="background_text main_text text_wrapper">
+                <p>
+                    指文字とは、聴覚障がい者のコミュニケーションツールであり、50音を手の形や動きに対応させたものである。<br>
+                    私は大学入学から現在までの5年間、学内の聴覚障がい学生の授業支援ボランティアを続けており、聴覚障がい学生と手話や指文字を使いながらコミュニケーションをとっていた。<br>
+                    しかし、新型コロナウイルスの流行に伴い、支援がオンラインに移行したために、手話や指文字を使う機会が減少し、学習した手話や指文字をほとんど忘れてしまった。<br>
+                    そこで、気軽に自宅でも指文字が学習できるWebタイピングゲームを制作しようと考えた。<br>
+                    <br>
+                    現状では未だゲーム制作には至っておらず、javascriptベースの指文字認識システムを開発中である。
+                </p>
+            </div>
+        </div>
+        <div id="system" class="content">
+            <div class="each_title">
+                <span class="en_title">System</span>
+                <span class="ja_title">- システム -</span>
+            </div>
+            <div class="system_text main_text text_wrapper">
+
+                <ul id="onecol_list">
+                    <li class="onecol_container">
+                        <div class="system_image_container">
+                            <p>
+                                <span class="bold">Mediapipe Hands</span><br>
+                                骨格トラッキング
+                            </p>
+                            <img src="../image/yubimoji/handtrancking.jpg" alt="骨格トラッキング">
+                        </div>
+                    </li>
+                    <li class="onecol_container">
+                        <div class="system_image_container">
+                            <p>
+                                <span class="bold">p5.js + ml5.js</span><br>
+                                関節の角度を取得 + 機械学習
+                            </p>
+                            <img src="../image/yubimoji/yubimoji2.jpg" alt="深層学習による指文字の識別">
+                        </div>
+                    </li>
+                    <li class="onecol_container">
+                        <div class="system_text_container">
+                            <p>
+                                Mediapipe Handsの骨格トラッキングで取得した指の、各関節の角度を計算し学習させる。
+                            </p>
+                        </div>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="prototype" class="content">
+            <div class="each_title">
+                <span class="en_title">Prototype</span>
+                <span class="ja_title">- プロトタイプ -</span>
+            </div>
+            <div class="prototype_text main_text text_wrapper">
+                <p>
+                    プロトタイプとして、動きのある指文字「の」「も」「り」「を」「ん」を除いた45音を学習させ、識別テストを行った。<br>
+                    <br>
+                    <span class="bold">結果として、45音のうち41音は識別できた。</span>
+                </p>
+            </div>
+            <div id="future_prospects" class="content">
+            <div class="each_title">
+                <span class="en_title">Future Prospects</span>
+                <span class="ja_title">- 課題と展望 -</span>
+            </div>
+            <div class="prototype_text main_text text_wrapper">
+                <p>
+                    ・動きのある指文字の認識システムを構築、実装する。<br>
+                    ・ゲームの内容・UIを制作する。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="../lib/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+</body>
+
+</html>

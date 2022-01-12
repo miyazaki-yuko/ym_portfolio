@@ -194,7 +194,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 /* research */ 
-#research_list {
+.twocol_list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -202,7 +202,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     padding: 0;
     width: 100%;
 }
-.container {
+.twocol_container {
     margin: 2vh 2vh;
     width: 40%;
     /* flex: 1; */
@@ -248,7 +248,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     opacity: 1;
 } */
 
-#resp_list, #system_list{
+.onecol_list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +257,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     padding: 0;
     width: 100%;
 }
-.resp_container, .system_container {
+.onecol_container {
     margin: 3vh auto;
     display: flex;
     justify-content: center;
@@ -282,7 +282,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 /* system */
-.system_container {
+.system_con {
     padding-bottom: 9vh;
     border-bottom: #626262 2px dashed;
 }
