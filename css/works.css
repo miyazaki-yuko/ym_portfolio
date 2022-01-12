@@ -55,7 +55,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 #title h1 {
     font-weight: 400;
     font-size: 5rem;
-    margin-top: 5vw;
+    margin-top: 9vw;
     margin-bottom: 0;
 }
 #title p {
@@ -65,7 +65,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 #caption {
     font-weight: 500;
     font-size: 1.4rem;
-    margin: 3vw auto;
+    margin: 5vw auto;
 }
 
 /* inner wrapper */
@@ -194,7 +194,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 /* research */ 
-.twocol_list {
+.col_list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -207,14 +207,24 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     width: 40%;
     /* flex: 1; */
 }
-.image_container {
+.middle_image_container {
     position: relative;
     text-align: center;
     font-size: 0.9rem;
     font-weight: 400;
     color: #626262;
+    line-height: 1.8rem;
 }
-
+.threecol_container {
+    margin: 2vh auto;
+    width: 30%;
+}
+.order {
+    text-align: center;
+     font-weight: 500;
+     font-size: 1.5rem;
+     color:#8D67A8;
+}
 /* slide show */
 /* .responsible_text {
     margin: 5vw auto;
@@ -248,22 +258,13 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     opacity: 1;
 } */
 
-.onecol_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 .onecol_container {
     margin: 3vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.resp_image_container {
+.onecol_image_container {
     text-align: right;
     font-size: 0.9rem;
     font-weight: 400;
@@ -286,11 +287,11 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     padding-bottom: 9vh;
     border-bottom: #626262 2px dashed;
 }
-.system_text_container a{
+.left_text_container a{
     color: #8D67A8;
     font-weight: 400;
 }
-.system_text_container a:hover{
+.left_text_container a:hover{
     color: #bf8be4;
     font-weight: 400;
 }
@@ -322,3 +323,6 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     margin-top: -1px;
 }
 
+.adv_con {
+    width: 90%;
+}
