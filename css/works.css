@@ -150,6 +150,9 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     font-size: 1.1rem;
     line-height: 210%;
 }
+.main_text img {
+    max-width: 100%;;
+}
 .text_wrapper {
     width: 65%;
     overflow-wrap: break-word;
@@ -211,11 +214,6 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     font-weight: 400;
     color: #626262;
 }
-.image_container img {
-    /* width: 60%;
-    object-fit: cover; */
-    max-width: 100%;
-}
 
 /* slide show */
 /* .responsible_text {
@@ -250,7 +248,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     opacity: 1;
 } */
 
-#resp_list {
+#resp_list, #system_list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,16 +257,68 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     padding: 0;
     width: 100%;
 }
-.resp_container {
+.resp_container, .system_container {
     margin: 3vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .resp_image_container {
     text-align: right;
     font-size: 0.9rem;
     font-weight: 400;
-    width: 100%;
+    width: 90%;
 }
-.resp_image_container img {
-    width: 100%;
-    max-width: 100%;
+
+/* relationships */
+.relationships_text div {
+    padding: 0 1vw;
+    text-align: center;
+    font-size: 1rem;
+    color: #aeaeae;
 }
+.with_border {
+    border-right: #626262 1px solid;
+}
+
+/* system */
+.system_container {
+    padding-bottom: 9vh;
+    border-bottom: #626262 2px dashed;
+}
+.system_text_container a{
+    color: #8D67A8;
+    font-weight: 400;
+}
+.system_text_container a:hover{
+    color: #bf8be4;
+    font-weight: 400;
+}
+.arrow2 {
+    position: relative;
+    padding-left: 1.7rem;
+}
+.arrow2::before {
+    position: absolute;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #8D67A8;
+    border-radius: 50%;
+    top: 45%;
+    left: 0;
+    margin-top: -7px;
+}
+.arrow2::after {
+    position: absolute;
+    content: '';
+    width: 0.3rem;
+    height: 0.3rem;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    transform: rotate(45deg);
+    top: 45%;
+    left: 5px;
+    margin-top: -1px;
+}
+
