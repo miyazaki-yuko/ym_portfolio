@@ -13,7 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../lib/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="../css/works.css">
 </head>
@@ -29,7 +28,7 @@
     </div>
     <div id="title">
         <h1>Relation-Lines</h1>
-        <p class="year">2020</p>
+        <p class="year">2021</p>
     </div>
     <div id="caption">
         東京都立大学　学部卒業制作作品
@@ -123,15 +122,15 @@
                 </p>
             </div>
         </div>
-        <div id="system_part" class="content">
+        <div id="system" class="content">
             <div class="each_title">
                 <span class="en_title">System</span>
                 <span class="ja_title">- システム -</span>
             </div>
             <div class="system_text main_text text_wrapper">
 
-                <ul id="system_list">
-                    <li class="text_container">
+                <ul class="onecol_list">
+                    <li class="onecol_container">
                         <div class="system_text_container">
                             <p>
                                 深層学習による物体検知と、画像認識を使った接触判定を行い、その結果をTouchDesignerに送信。<br>
@@ -139,7 +138,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="system_container">
+                    <li class="onecol_container system_con">
                         <div class="system_image_container">
                             <h3><span class="bold">openFrameworksを用いた物体検知</span></h3>
                             <img src="../image/relation_lines/of_objectdetection.jpg" alt="openFrameworksによる物体検知">
@@ -149,7 +148,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="system_container">
+                    <li class="onecol_container system_con">
                         <div class="system_image_container">
                             <h3><span class="bold">Teachable Machineを用いた接触判定</span></h3>
                             <img src="../image/relation_lines/p5_touch.jpg" alt="TeachableMachineを用いた接触判定">
@@ -159,7 +158,7 @@
                             </p>
                         </div>                        
                     </li>
-                    <li class="system_container">
+                    <li class="onecol_container system_con">
                         <div class="system_image_container">
                             <h3><span class="bold">TouchDesignerを用いたビジュアルエフェクト生成</span></h3>
                             <img src="../image/relation_lines/touchdesigner.jpg" alt="TouchDesignerを用いたビジュアルエフェクト生成">
@@ -169,65 +168,48 @@
                             </p>
                         </div>
                     </li>
-                    <li class="text_container">
+                    <li class="onecol_container">
                         <div class="system_text_container">                    
                             <p>この作品の細かな技術については、別途noteを書いているので、よければそちらをご覧ください。</p>    
                             <a href="https://note.com/yuko_3">
-                                <div class="arrow2">
-                                    note
-                                </div>
+                                <div class="arrow2">note</div>
                             </a>
                         </div>
                     </li>
                 </ul>
-                <!-- <div class="responsible_text">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="../image/medium/03.jpg" alt="電子基板アニメーション">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../image/medium/04.jpg" alt="パスコードのモーショングラフィックス">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../image/medium/05.jpg" alt="インターネット空間">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../image/medium/06.jpg" alt="AfterEffectsを使ったシーンの繋ぎ">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../image/medium/07.jpg" alt="メインビジュアル">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <p>電子基板アニメーション</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>パスコードのモーショングラフィックス</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>インターネット空間のモデリング</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>AfterEffectsを使ったシーンの繋ぎ</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>キービジュアルデザイン</p>
-                            </div>
-                        </div> -->
             </div>
         </div>
+        <div id="future_prospects" class="content">
+            <div class="each_title">
+                <span class="en_title">Future Prospects</span>
+                <span class="ja_title">- 課題と展望 -</span>
+            </div>
+            <div class="prototype_text main_text text_wrapper">
+                <ul class="onecol_list">
+                    <li class="onecol_container">
+                        <div class="system_image_container">
+                            <h3>課題</h3>
+                            <p>
+                                ・非接触時の「モノ同士の関係」についてが未実装。<br>
+                                ・画像認識や物体検知の精度が甘く、場所や明るさが変わると結果が変わり、汎用性がない。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="onecol_container">
+                        <div class="system_image_container">
+                            <h3>展望</h3>
+                            <p>
+                                ・Leap Motionでの接触判定を実装。<br>
+                                ・学習コスト上、今回学習させたのは紙とペンのみなので、物体検知の範囲を広げる。<br>
+                                ・モノによって変化するビジュアルエフェクトの検討を行う。<br>
+                                &nbsp;&nbsp;例）ボトルとコップだと水が流れるようなエフェクト　など
+                            </p>
+                        </div>
+                    </li>
+                </ul>
     </div>
 
     </div>
-
-
-    <script src="../lib/swiper-bundle.min.js"></script>
-    <script src="../js/swiper.js"></script>
 </body>
 
 </html>
