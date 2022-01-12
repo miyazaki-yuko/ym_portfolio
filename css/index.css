@@ -255,12 +255,12 @@ h3 {
 
 .image_container {
     position: relative;
-    height: 205px;
+    height: 267px;
 }
 
 .image_container img {
-    width: 320px;
-    height: 205px;
+    width: 416px;
+    height: 267px;
     object-fit: cover;
     max-width: 100%;
 }
