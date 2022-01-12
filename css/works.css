@@ -163,9 +163,16 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 .bold {
     font-weight: 500;
 }
+
+/* schedule */
 .schedule_text {
     text-align: center;
     padding: 0 10vw;
+    margin: 5vw auto;
+}
+.shops_text {
+    text-align: left;
+    padding: 0 12vw;
     margin: 5vw auto;
 }
 .schedule_item {
@@ -181,16 +188,18 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     /* font-weight: 400; */
     margin-top: 10vh;
 }
-.month {
+.month, .shop {
     flex: 3;
     font-weight: 500;
     font-size: 1.2rem;
 }
-.what_did {
+.what_did, .station {
     flex: 2;
-    border-left: #626262 1px solid;
     text-align: left;
     padding-left: 5vw;
+}
+.what_did {
+    border-left: #626262 1px solid;
 }
 
 /* research */ 
@@ -225,38 +234,6 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
      font-size: 1.5rem;
      color:#8D67A8;
 }
-/* slide show */
-/* .responsible_text {
-    margin: 5vw auto;
-}
-.swiper {
-    width: 90%;
-    height: 100%;
-}
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-slide p {
-    color: #626262;
-    font-weight: 400;
-    margin: 2vh;
-}
-.swiper-pagination-bullet {
-    background: #fff;
-    opacity: 0.5;
-}
-.swiper-pagination-bullet-active {
-    background: #42AAC7;
-    opacity: 1;
-} */
 
 .onecol_container {
     margin: 3vh auto;
@@ -264,7 +241,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     justify-content: center;
     align-items: center;
 }
-.onecol_image_container {
+.right_image_container {
     text-align: right;
     font-size: 0.9rem;
     font-weight: 400;
