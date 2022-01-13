@@ -195,6 +195,7 @@ h3 {
     color: #8D67A8;
     border-left: solid 5px #B69FC5;
     padding: 0.25em 0.7em;
+    margin-top: 0;
 }
 
 .navigation{
@@ -302,6 +303,9 @@ h3 {
 
 
 /* profile */
+#about_me, #biography {
+    margin-bottom: 3vh;
+}
 .eng_name {
     margin-left: 2vw;
     font-size: 1.5rem;
@@ -314,14 +318,14 @@ h3 {
 }
 
 .my_image{
-    flex: 5;
+    flex: 3;
     text-align: center;
 }
 
 .about_text{
-    flex: 4;
+    flex: 2;
     /* font-size: 0.9rem; */
-    line-height: 1.3rem;
+    /* line-height: 1.3rem; */
     font-weight: 300;
     margin-left: 2vw;
 }
@@ -348,7 +352,7 @@ h3 {
     display: flex;
 }
 
-.contact, .note{
+.contact{
     margin-left: 5vw;
 }
 
