@@ -1,8 +1,3 @@
-//filterring
-function filterring(list) {
-    //let lclass = list.class;
-    console.log(list);
-}
 
 function noScroll(event) {
     event.preventDefault();
