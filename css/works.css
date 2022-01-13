@@ -121,8 +121,14 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 #exp_detail div{
     margin-top: 2vh;
 }
+.exp_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
 .midashi {
-    display: inline-block;
+    /* display: inline-block; */
     width: 100px;
     color: #5e5e5e;
     font-weight: 300;
@@ -249,7 +255,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 /* relationships */
-.relationships_text div {
+.relationships_text2 div {
     padding: 0 1vw;
     text-align: center;
     font-size: 1rem;
@@ -302,4 +308,133 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 
 .adv_con {
     width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    #title h1 {
+        font-weight: 400;
+        font-size: 2.7rem;
+        margin-top: 9vw;
+        margin-bottom: 0;
+    }
+    #title p {
+        font-size: 1rem;
+        color: #626262;
+    }
+    #caption {
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin: 5vw 7vw;
+    }
+    #explanation {
+        display: block;
+        padding: 3vh 0;
+    }
+    #theme {
+        height: auto;
+    }
+    #theme div {
+        margin-top: 1vh;
+    }
+    #theme span {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    #exp_detail {
+        border: none;
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0;
+        margin-top: 2vh;
+    }
+    #exp_detail div{
+        margin: 0.5vh auto;
+    }
+    .midashi {
+        flex: 2;
+    }
+    .info {
+        flex: 3;
+    }
+    .inner_wrapper, .text_wrapper {
+        width: 90%;
+    }
+    .content {
+        margin-top: 10vh;
+    }
+    .miro {
+        text-align: center;
+    }
+    .each_title {
+        text-align: center;
+        margin: 5vh auto;
+    }
+    .en_title {
+        font-size: 2.7rem
+    }
+    .schedule_text, .shops_text, .exp_item {
+        padding: 0;
+    }
+    .what_did, .month {
+        flex: 1;
+    }
+    .onecol_container {
+        margin: 1vh auto;
+    }
+    .threecol_container {
+        width: 100%;
+    }
+    .right_image_container{
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .middle_image_container {
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+    .relationships_text2 {
+        display: block;
+        font-size: 0.6rem;
+    }
+    .with_border {
+        border: none;
+    }
+    .shop {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .station, .grally_text {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #back_to_top {
+        display: none;
+    }
+    #explanation {
+        display: block;
+        padding: 3vh;
+    }
+    #theme {
+        max-width: 100%;
+        height: auto;
+    }
+    #theme div {
+        margin-top: 1vh;
+    }
+    
+    #exp_detail {
+        border: none;
+        width: 100%;
+    }
+    .exp_item {
+        padding-left: 7vw;
+    }
+    .inner_wrapper {
+        width: 80%;
+    }
+    .miro {
+        text-align: center;
+    }
 }
