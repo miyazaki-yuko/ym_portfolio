@@ -4,10 +4,21 @@ function noScroll(event) {
 }
 
 window.onload = function() {
+    const key_name = 'visited';
+    const key_value = true;
     document.addEventListener('mousewheel', noScroll, {passive: false});
-    window.setTimeout(addLoaded, 4*1000);
-    window.setTimeout(enableScroll, 5*1000);
+    
+    if(!sessionStorage.getItem(key_name)) {
+        sessionStorage.setItem(key_name, key_value);
+        setTimeout(addLoaded, 4*1000);
+        setTimeout(enableScroll, 5*1000);
+    }
+    else {
+        addLoaded();
+        enableScroll();
+    }
 }
+
 function addLoaded() {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
