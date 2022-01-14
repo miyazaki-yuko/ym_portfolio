@@ -515,82 +515,7 @@ h3 {
 
 
 /* responsive */
-@media screen and (max-width: 768px) {
-    .my {
-        display: none;
-    }
-    .sp_visible {
-        display: block;
-    }
-    .sp_load {
-        line-height: 2.4rem;
-    }
-    .instead_my {
-        font-size: 2.1rem;
-        font-family: 'Josefin Slab', serif;
-    }
-    .navigation {
-        display: none;
-    }
-    .inner_wrapper {
-        width: 90%;
-    }
-    #contents_list {
-        width: 100%;
-    }
-    .container {
-        width: 100%;
-    }
-    .image_container img {
-        width: 100%;
-        height: auto;
-    }
-    h2 {
-        font-size: 2.1rem;
-        text-align: center;
-    }
-    .eng_name {
-        font-size: 1rem;
-    }
-    .about_me {
-        display: block;
-        margin-bottom: 5vh;
-    }
-    .about_text {
-        margin-top: 5vh;
-        line-height: 2.1rem;
-    }
-    #biography {
-        margin-bottom: 5vh;
-        line-height: 1.8rem;
-    }
-    .bio_year {
-        flex: 1;
-    }
-    .event {
-        flex: 3;
-    }
-    .sns_s a{
-        font-weight: 500;
-    }
-    .skill_list {
-        width: 100%;
-    }
-    .skill_item {
-        display: block;
-    }
-    .skill_icon {
-        justify-content: flex-start;
-        margin: 3vh auto;
-    }
-    .skill_icon img {
-        width: 9vw;
-        margin-right: 3vw;
-    }
-    .skill_bar_range, .border {
-        height: 9vh;
-    }
-}
+
 
 @media screen and (max-width: 1280px) {
     @keyframes slide_m {
@@ -682,6 +607,85 @@ h3 {
     }
     .eng_name {
         font-size: 1.5rem;
+    }
+    .about_me {
+        display: block;
+        margin-bottom: 5vh;
+    }
+    .about_text {
+        margin-top: 5vh;
+        line-height: 2.1rem;
+    }
+    #biography {
+        margin-bottom: 5vh;
+        line-height: 1.8rem;
+    }
+    .bio_year {
+        flex: 1;
+    }
+    .event {
+        flex: 3;
+    }
+    .sns_s a{
+        font-weight: 500;
+    }
+    .skill_list {
+        width: 100%;
+    }
+    .skill_item {
+        display: block;
+    }
+    .skill_icon {
+        justify-content: flex-start;
+        margin: 3vh auto;
+    }
+    .skill_icon img {
+        width: 9vw;
+        margin-right: 3vw;
+    }
+    .skill_bar_range, .border {
+        height: 9vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my, .pc_visible {
+        display: none;
+    }
+    .sp_visible {
+        display: block;
+    }
+    .sp_load {
+        line-height: 2.4rem;
+    }
+    .instead_my {
+        font-size: 2.1rem;
+        font-family: 'Josefin Slab', serif;
+    }
+    .navigation {
+        display: none;
+    }
+    .inner_wrapper {
+        width: 90%;
+    }
+    #contents_list {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .image_container img {
+        width: 100%;
+        height: auto;
+    }
+    .sp_visible {
+        font-size: 2.1rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    .eng_name {
+        font-size: 0.9rem;
+        margin-left: 0;
     }
     .about_me {
         display: block;
