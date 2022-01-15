@@ -365,7 +365,7 @@ h3 {
     display: flex;
 }
 
-.contact{
+.contact, .github{
     margin-left: 5vw;
 }
 
